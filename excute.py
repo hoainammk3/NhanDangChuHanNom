@@ -18,7 +18,10 @@ def predict_and_plot(model, folder_path, save_results=True, conf=0.2, iou=0.5):
         # Plot image
         plot = Results.plot()
         plot = cv2.cvtColor(plot, cv2.COLOR_BGR2RGB)
-        display(Image.fromarray(plot))
+
+        # Show image
+        # Image.fromarray(plot).show() 
+        
 
 # RUN predict_and_plot
 folder_path = "images"
