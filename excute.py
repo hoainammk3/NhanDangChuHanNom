@@ -1,7 +1,7 @@
 import torch
 import os
 import cv2
-# model = YOLO("best.pt")
+
 model = torch.load('best1.pt', map_location=torch.device('cpu'))
 
 def predict_and_plot(model, folder_path, save_results=True, conf=0.2, iou=0.5):
