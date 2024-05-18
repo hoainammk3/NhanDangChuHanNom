@@ -1,5 +1,4 @@
 import torch
-from PIL import Image
 import os
 import cv2
 # model = YOLO("best.pt")
@@ -20,7 +19,7 @@ def predict_and_plot(model, folder_path, save_results=True, conf=0.2, iou=0.5):
         plot = cv2.cvtColor(plot, cv2.COLOR_BGR2RGB)
 
         # Show image
-        # Image.fromarray(plot).show() 
+        # Image.fromarray(plot).show()
         
 
 # RUN predict_and_plot
