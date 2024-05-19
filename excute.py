@@ -2,7 +2,7 @@ import torch
 import os
 import cv2
 
-model = torch.load('best1.pt', map_location=torch.device('cpu'))
+model = torch.load('model.pt', map_location=torch.device('cpu'))
 
 def predict_and_plot(model, folder_path, save_results=True, conf=0.2, iou=0.5):
     # Get a list of all files in the directory
